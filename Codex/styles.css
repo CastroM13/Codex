@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html,
+body {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* cover */
+
+.inputmassa:focus{
+    clear: both;
+}
+
+#cover {
+    background: #222 url('img/wp.png') center center no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#cover-caption {
+    width: 100%;
+}
+
+#display-3{
+    background: #222 url('img/logoflat.png') center center no-repeat;
+}
+
+.size{
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin-bottom: -20%;
+    text-shadow: 2px 2px #000000;
+}
+
+#err{
+    margin-bottom: -20px;
+}
+
+@media only screen and (max-width: 600px) {
+    #cover {
+        background: #222 url('img/wpmobile.png') center center no-repeat;
+        background-size: cover;
+        color: white;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    
+    #cover-caption {
+        width: 100%;
+    }
+    .size{
+        height: 100%;
+        width: 100%;
+    }
+  }

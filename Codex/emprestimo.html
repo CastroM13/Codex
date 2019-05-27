@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Empréstimo</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="livro.css">
+
+</head>
+<body>
+
+  
+    <nav style="color:red" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="main.php">
+            <img>
+            Bibliotech
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="main.php">Início <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="livro.php">Empréstimo</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Perfil
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="livros.html">Livros Emprestados</a>
+                <a class="dropdown-item" href="situacao.html">Situação</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="config.html">Configurações</a>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+
+    <section id="cover" class="jumbotron text-xs-center">
+        
+    </section>
+
+    <section>
+        <h2 style="text-align: center">Empréstimo de Livro</h2>
+        <div class="row no-gutters">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6"><input type="text" class="form-control text-center" placeholder="Digite o nome do livro"></div><br/>
+            <div style="text-align: center;"class="col-sm-2 nice"><button type="button" class="btn btn-outline-dark">Pesquisar</button></div>
+          </div>
+          <p></p>
+        <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Título</th>
+                    <th scope="col">Autor</th>
+                    <th class="d-none d-sm-block" scope="col">Editora</th>
+                    <th scope="col">Qtd.</th>
+                    <th class="d-none d-sm-block" scope="col">Categoria</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr data-toggle="modal" data-target="#modal">
+                    <th scope="row">1</th>
+                    <td>Livrum: The Book of Tests</td>
+                    <td>J. Doe</td>
+                    <td class="d-none d-md-block">Nouras</td>
+                    <td>5</td>
+                    <td class="d-none d-md-block">Técnico</td>
+                  </tr>
+                  <tr onClick="open()" >
+                    <th scope="row">2</th>
+                    <td>Livrum: The Book of Tests</td>
+                    <td>J. Doe</td>
+                    <td class="d-none d-md-block">Nouras</td>
+                    <td>5</td>
+                    <td class="d-none d-md-block">Técnico</td>
+                  </tr>
+                  <tr onClick="open()" >
+                    <th scope="row">3</th>
+                    <td>Livrum: The Book of Tests</td>
+                    <td>J. Doe</td>
+                    <td class="d-none d-md-block">Nouras</td>
+                    <td>5</td>
+                    <td class="d-none d-md-block">Técnico</td>
+                  </tr>
+                  <tr onClick="open()" >
+                    <th scope="row">4</th>
+                    <td>Livrum: The Book of Tests</td>
+                    <td>J. Doe</td>
+                    <td class="d-none d-md-block">Nouras</td>
+                    <td>5</td>
+                    <td class="d-none d-md-block">Técnico</td>
+                  </tr>
+                  <tr onClick="open()" >
+                    <th scope="row">5</th>
+                    <td>Livrum: The Book of Tests</td>
+                    <td>J. Doe</td>
+                    <td class="d-none d-md-block">Nouras</td>
+                    <td>5</td>
+                    <td class="d-none d-md-block">Técnico</td>
+                  </tr>
+                  <tr onClick="open()" >
+                    <th scope="row">6</th>
+                    <td>Livrum: The Book of Tests</td>
+                    <td>J. Doe</td>
+                    <td class="d-none d-md-block">Nouras</td>
+                    <td>5</td>
+                    <td class="d-none d-md-block">Técnico</td>
+                  </tr>
+                  <tr onClick="open()" >
+                    <th scope="row">7</th>
+                    <td>Livrum: The Book of Tests</td>
+                    <td>J. Doe</td>
+                    <td class="d-none d-md-block">Nouras</td>
+                    <td>5</td>
+                    <td class="d-none d-md-block">Técnico</td>
+                  </tr>
+                 <tr onClick="open()" >
+                    <th scope="row">8</th>
+                    <td>Livrum: The Book of Tests</td>
+                    <td>J. Doe</td>
+                    <td class="d-none d-md-block">Nouras</td>
+                    <td>5</td>
+                    <td class="d-none d-md-block">Técnico</td>
+                  </tr>
+                  <tr onClick="open()" >
+                    <th scope="row">9</th>
+                    <td>Livrum: The Book of Tests</td>
+                    <td>J. Doe</td>
+                    <td class="d-none d-md-block">Nouras</td>
+                    <td>5</td>
+                    <td class="d-none d-md-block">Técnico</td>
+                  </tr>
+                </tbody>
+              </table>
+    </section>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+
+    <footer class="text-muted">
+        <div class="container">
+            <!-- <p class="pull-xs-right">
+                <a href="#">Back to top</a>
+            </p> -->
+            <p>Bibliotech é um projeto de desenvolvimento open-source.</p>
+            <p>Quer colaborar com o projeto? <a href="../../">Visite nosso Git Hub</a> e leia nossas <a href="../../getting-started/">diretrizes de alteração</a>.</p>
+        </div>
+    </footer> 
+   
+   
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
